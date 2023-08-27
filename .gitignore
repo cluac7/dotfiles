@@ -155,3 +155,5 @@
 !/.config/waybar/**
 !/.config/xdg-terminals.list
 !/.bash*
+!/.config/nvim/
+!/.config/nvim/**
