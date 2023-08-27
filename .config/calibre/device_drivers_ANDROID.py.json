@@ -1,0 +1,18 @@
+{
+  "extra_customization": [
+    "kindle,eBooks/import,wordplayer/calibretransfer,Books,sdcard/ebooks",
+    ""
+  ],
+  "format_map": [
+    "azw3",
+    "mobi",
+    "azw",
+    "azw1",
+    "azw4",
+    "pdf"
+  ],
+  "read_metadata": true,
+  "save_template": "{author_sort}/{title} - {authors}",
+  "use_author_sort": false,
+  "use_subdirs": false
+}

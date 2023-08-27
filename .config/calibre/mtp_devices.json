@@ -1,0 +1,22 @@
+{
+  "format_map": [
+    "azw3",
+    "mobi",
+    "azw",
+    "azw1",
+    "azw4",
+    "pdf"
+  ],
+  "send_template": "{title} - {authors}",
+  "send_to": [
+    "Android/data/com.amazon.kindle/files",
+    "kindle",
+    "Calibre_Companion",
+    "Books",
+    "eBooks/import",
+    "eBooks",
+    "wordplayer/calibretransfer",
+    "sdcard/ebooks",
+    "NOOK"
+  ]
+}
