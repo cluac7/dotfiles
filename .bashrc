@@ -9,3 +9,8 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 alias config='/usr/bin/git --git-dir=/home/rahul/.cfg/ --work-tree=/home/rahul'
+\n# Add the directory of Tizen .NET Command Line Tools to user path.\nexport PATH=/home/rahul/tizen-studio/tools/ide/bin:$PATH
+
+export PATH=/home/rahul/bin:$PATH
+
+[[ -e "/home/rahul/lib/oracle-cli/lib/python3.11/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/home/rahul/lib/oracle-cli/lib/python3.11/site-packages/oci_cli/bin/oci_autocomplete.sh"

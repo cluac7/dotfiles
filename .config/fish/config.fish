@@ -101,7 +101,9 @@ abbr -a -g ips 'ip link show'																					# Get network interfaces infor
 abbr -a -g wloff 'rfkill block wlan'																			# Block wlan, killing wifi connection
 abbr -a -g wlon 'rfkill unblock wlan'																		# Unblock wlan, start wifi connection																						
 abbr -a -g kys 'paru -Rns'
-abbr -a -g slep 'swaylock &; systemctl suspend'
+abbr -a -g slep 'sudo systemctl suspend'
+abbr -a -g --position anywhere --set-cursor clipaste 'wl-paste -t image/png > "%.png"'
+abbr -a -g hx helix
 
 # Source plugins
 # Useful plugins: archlinux bang-bang cd colorman sudope vcs

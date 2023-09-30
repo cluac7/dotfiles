@@ -23,7 +23,7 @@
     "custom/spotify"
   ],
 
-  "modules-center": ["wlr/workspaces"],
+  "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "custom/notification",
     "battery",
@@ -36,7 +36,7 @@
     "clock"
   ],
 
-  "wlr/workspaces": {
+  "hyprland/workspaces": {
     "all-outputs": true,
     "active-only": false,
     "on-click": "activate",
