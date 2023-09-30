@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 # swww animation settings
 export SWWW_TRANSITION=outer                    # Sets the type of transition. Default is 'simple', that fades into the new image
