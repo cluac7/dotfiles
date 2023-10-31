@@ -3,5 +3,5 @@ DisplayMonitorSources = false
 EnableUpdates = true
 FilterInput = true
 FilterOutput = false
-LastUsedInput = "alsa_input.pci-0000_09_00.4.analog-stereo"
+LastUsedInput = "alsa_input.pci-0000_09_00.4.3.analog-stereo"
 LastUsedOutput = ""

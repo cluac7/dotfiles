@@ -27,3 +27,19 @@ nvim ~/.oci/oci_cli_rc
 nvim ~/.oci/oci_cli_rc 
 oci iam compartment get --output table --query "data.{CompartmentName:\"name\"}"
 oci iam compartment get --output table --query "data.{CompartmentName:\"name\"}" --debug
+exit
+exit
+Adat MPR121 Capacitive Touch sensor test
+MPR121 found!
+Adafruit MPR121 Capacitive Touch sensor test
+MPR121 found!
+6 touched
+6 released
+6 touched
+6 released
+6 touched
+6 released
+sudo nigger
+exit
+exit
+exit

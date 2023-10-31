@@ -44,7 +44,7 @@
             "enabled": true
         },
         "ServerListAPI": {
-            "enabled": false
+            "enabled": true
         },
         "SettingsStoreAPI": {
             "enabled": false
@@ -60,7 +60,7 @@
             "enabled": false
         },
         "AlwaysTrust": {
-            "enabled": true
+            "enabled": false
         },
         "AnonymiseFileNames": {
             "enabled": false
@@ -133,7 +133,8 @@
             "enableStreamQualityBypass": true,
             "transformStickers": true,
             "transformEmojis": true,
-            "transformCompoundSentence": false
+            "transformCompoundSentence": false,
+            "emojiSize": 48
         },
         "FakeProfileThemes": {
             "enabled": false
@@ -200,7 +201,12 @@
         },
         "MessageLogger": {
             "enabled": true,
-            "deleteStyle": "text"
+            "deleteStyle": "text",
+            "ignoreBots": false,
+            "ignoreSelf": false,
+            "ignoreUsers": "",
+            "ignoreChannels": "",
+            "ignoreGuilds": ""
         },
         "MessageTags": {
             "enabled": false
@@ -302,7 +308,7 @@
             "enabled": false
         },
         "ReadAllNotificationsButton": {
-            "enabled": false
+            "enabled": true
         },
         "RelationshipNotifier": {
             "enabled": false
@@ -440,6 +446,18 @@
         },
         "Wikisearch": {
             "enabled": false
+        },
+        "OnePingPerDM": {
+            "enabled": false
+        },
+        "PermissionFreeWill": {
+            "enabled": false
+        },
+        "NoMosaic": {
+            "enabled": false
+        },
+        "NoTypingAnimation": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -452,6 +470,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1696080402598
+        "settingsSyncVersion": 1697783868869
     }
 }
