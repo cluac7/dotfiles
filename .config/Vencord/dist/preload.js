@@ -1,4 +1,4 @@
-// Vencord 522fdcd
+// Vencord 86e9434
 // Standalone: true
 // Platform: Universal
 // Updater disabled: false

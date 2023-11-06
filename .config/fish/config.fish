@@ -103,7 +103,8 @@ abbr -a -g wlon 'rfkill unblock wlan'																		# Unblock wlan, start wif
 abbr -a -g kys 'paru -Rns'
 abbr -a -g slep 'hyprctl dispatch dpms off'
 abbr -a -g --position anywhere --set-cursor clipaste 'wl-paste -t image/png > "%.png"'
-abbr -a -g hx helix
+abbr -a -g cpr 'cp -r'
+abbr -a -g rmr 'rm -r'
 
 # Source plugins
 # Useful plugins: archlinux bang-bang cd colorman sudope vcs
