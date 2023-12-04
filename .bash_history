@@ -44,3 +44,11 @@ exit
 exit
 exit
 exit
+exit
+gcc
+exit
+ls
+venv/bin/activate
+sudovenv/bin/activate
+sudo venv/bin/activate
+exit
