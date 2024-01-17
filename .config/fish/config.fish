@@ -68,6 +68,7 @@ export LC_ALL="en_US.UTF-8"
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
 export SHELL="fish"
+export BLINKA_U2IF=1
 
 # Term
 switch "$TERM_EMULATOR"
@@ -106,6 +107,10 @@ abbr -a -g --position anywhere --set-cursor clipaste 'wl-paste -t image/png > "%
 abbr -a -g cpr 'cp -r'
 abbr -a -g rmr 'rm -r'
 
+abbr -a -g lwp 'linux-wallpaperengine --silent --screen-root HDMI-A-1'
+
+
+
 # Source plugins
 # Useful plugins: archlinux bang-bang cd colorman sudope vcs
 if test -d "$HOME/.local/share/omf/pkg/colorman/"
@@ -141,7 +146,7 @@ end
 alias bat='bat --theme="Catppuccin-mocha"'
 alias hc=herbstclient
 alias code='code --ozone-platform=wayland'
-
+alias firefox='flatpak run org.mozilla.firefox'
 
 
 # Created by `pipx` on 2022-09-11 05:02:32

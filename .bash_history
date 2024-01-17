@@ -52,3 +52,20 @@ venv/bin/activate
 sudovenv/bin/activate
 sudo venv/bin/activate
 exit
+a
+b
+c
+d
+e
+f
+g
+exit
+exit
+exit
+shutdown -r now
+EXIT
+exit
+LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+exitr
+exit
