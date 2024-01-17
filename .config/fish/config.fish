@@ -108,6 +108,8 @@ abbr -a -g cpr 'cp -r'
 abbr -a -g rmr 'rm -r'
 
 abbr -a -g lwp 'linux-wallpaperengine --silent --screen-root HDMI-A-1'
+abbr -a -g --set-cursor lo '% | lolcat'
+abbr -a -g --set-cursor fl 'figlet % | lolcat'
 
 
 

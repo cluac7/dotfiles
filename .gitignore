@@ -157,3 +157,4 @@
 !/.bash*
 !/.config/nvim/
 !/.config/nvim/**
+!/home/rahul/Downloads/STG-backups/

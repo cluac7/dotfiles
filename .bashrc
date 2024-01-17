@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-fastfetch
+#fastfetch
 #cat ~/ctrlf5ascii.txt
 fish
 alias ls='ls --color=auto'
