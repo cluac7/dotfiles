@@ -195,7 +195,7 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/rahul/\x2emodular/pkg/packages\x2emodular\x2ecom_mojo/bin\x1e/home/rahul/\x2espicetify
+SETUVAR fish_user_paths:/opt/rocm/bin\x1e/home/rahul/\x2emodular/pkg/packages\x2emodular\x2ecom_mojo/bin\x1e/home/rahul/\x2espicetify
 SETUVAR tide_aws_bg_color:yellow
 SETUVAR tide_aws_color:brblack
 SETUVAR tide_aws_icon:\uf270

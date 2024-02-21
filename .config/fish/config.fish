@@ -110,6 +110,7 @@ abbr -a -g rmr 'rm -r'
 abbr -a -g lwp 'linux-wallpaperengine --silent --screen-root HDMI-A-1'
 abbr -a -g --set-cursor lo '% | lolcat'
 abbr -a -g --set-cursor fl 'figlet % | lolcat'
+abbr -a -g duh 'du -h'
 
 
 
@@ -152,9 +153,13 @@ alias firefox='flatpak run org.mozilla.firefox'
 
 
 # Created by `pipx` on 2022-09-11 05:02:32
-set PATH $PATH /home/zeroruka/.local/bin
 fish_add_path /home/rahul/.spicetify
 alias config='/usr/bin/git --git-dir=/home/rahul/.cfg/ --work-tree=/home/rahul/'
 
 # Created by `pipx` on 2023-07-27 09:13:06
 set PATH $PATH /home/rahul/.local/bin
+
+fish_add_path /opt/rocm/bin/
+
+zoxide init fish --cmd cd | source
+

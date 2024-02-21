@@ -158,3 +158,11 @@
 !/.config/nvim/
 !/.config/nvim/**
 !/home/rahul/Downloads/STG-backups/
+
+!/.config/dotool
+!/.config/dotool/**
+!/.config/nautilus/
+!/.config/nautilus/**
+!/.config/nvim.bk/
+!/.config/nvim.bk/**
+
