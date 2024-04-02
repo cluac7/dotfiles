@@ -30,6 +30,7 @@
         "pulseaudio",
     "pulseaudio#microphone",
         "network",
+        "custom/notification",
         "battery",
     ],
 
@@ -246,3 +247,4 @@
         "exec": "/usr/bin/python3 $HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
     }
 }
+
