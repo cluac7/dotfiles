@@ -149,7 +149,6 @@ end
 alias bat='bat --theme="Catppuccin-mocha"'
 alias hc=herbstclient
 alias code='code --ozone-platform=wayland'
-alias firefox='flatpak run org.mozilla.firefox'
 
 
 # Created by `pipx` on 2022-09-11 05:02:32
