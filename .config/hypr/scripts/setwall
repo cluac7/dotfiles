@@ -14,7 +14,7 @@ NC='\033[0m'
 
 # if swww is not started, start it
 if ! pgrep -x "swww" >/dev/null; then
-    swww init
+    swww-daemon -f xrgb
     sleep 2
 fi
 
