@@ -74,3 +74,4 @@ exit
 Hyprland 
 Hyprland 
 exit
+exit
