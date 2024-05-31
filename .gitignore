@@ -146,8 +146,6 @@
 !/.config/dotool/**
 !/.config/nautilus/
 !/.config/nautilus/**
-!/.config/nvim.bk/
-!/.config/nvim.bk/**
 
 !/.config/fuzzel/
 !/.config/fuzzel/**
