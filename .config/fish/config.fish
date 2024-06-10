@@ -161,4 +161,4 @@ set PATH $PATH /home/rahul/.local/bin
 fish_add_path /opt/rocm/bin/
 
 zoxide init fish --cmd cd | source
-
+set --universal FZF_DEFAULT_COMMAND 'fd'
