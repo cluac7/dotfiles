@@ -111,6 +111,7 @@ abbr -a -g lwp 'linux-wallpaperengine --silent --screen-root HDMI-A-1'
 abbr -a -g --set-cursor lo '% | lolcat'
 abbr -a -g --set-cursor fl 'figlet % | lolcat'
 abbr -a -g duh 'du -h'
+abbr -a -g cava 'kitty --start-as fullscreen -o background_opacity=0.1 cava'
 
 
 

@@ -18,18 +18,20 @@ if ! pgrep -x "swww" >/dev/null; then
     sleep 2
 fi
 
+swww img $HOME/.config/wallpapers/powderekko.png
 
-# get the names of the wallpapers in .config/wallpapers
-wallpapers=($(ls ~/.config/wallpapers))
 
-while : ; do 
-  for file in $(ls ~/.config/wallpapers/*.{png,jpg} | sort -R); do 
-    swww img "$file"
-    wal -c
-    wal -i "$file"
-    sleep 10000
-  done
-done
+## get the names of the wallpapers in .config/wallpapers
+#wallpapers=($(ls ~/.config/wallpapers))
+#
+#while : ; do 
+#  for file in $(ls ~/.config/wallpapers/*.{png,jpg} | sort -R); do 
+#    swww img "$file"
+#    wal -c
+#    wal -i "$file"
+#    sleep 10000
+#  done
+#done
 
 swww img $HOME/.config/wallpapers/${wallpapers[$(($var - 1))]}
 #swww img $HOME/.config/wallpapers/samurai_bebop.png
