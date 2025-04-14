@@ -1,5 +1,5 @@
 ﻿###
-###  vlc 3.0.18
+###  vlc 3.0.21
 ###
 
 ###
@@ -235,42 +235,6 @@
 # Open GL/GLES hardware converter (string)
 #glconv=
 
-# Rendering intent for color conversion (integer)
-#rendering-intent=1
-
-# Display primaries (integer)
-#target-prim=0
-
-# Display gamma / transfer function (integer)
-#target-trc=0
-
-# Tone-mapping algorithm (integer)
-#tone-mapping=3
-
-# Tone-mapping parameter (float)
-#tone-mapping-param=0.000000
-
-# Highlight clipped pixels (boolean)
-#tone-mapping-warn=0
-
-# Dithering algorithm (integer)
-#dither-algo=-1
-
-# Dither depth override (0 = framebuffer depth) (integer)
-#dither-depth=0
-
-# Desaturation strength (float)
-#desat-strength=0.000000
-
-# Desaturation exponent (float)
-#desat-exponent=0.000000
-
-# Desaturation base (float)
-#desat-base=0.000000
-
-# Maximum brightness boost (float)
-#max-boost=0.000000
-
 [flaschen] # Flaschen-Taschen video output
 
 # Flaschen-Taschen display address (string)
@@ -307,7 +271,7 @@
 [sharpen] # Sharpen video filter
 
 # Sharpen strength (0-2) (float)
-#sharpen-sigma=0.050000
+sharpen-sigma=0.200000
 
 [sepia] # Sepia video filter
 
@@ -420,7 +384,7 @@
 [grain] # Grain video filter
 
 # Variance (float)
-#grain-variance=2.000000
+grain-variance=4.500000
 
 # Minimal period (integer)
 #grain-period-min=1
@@ -607,19 +571,19 @@
 [adjust] # Image properties filter
 
 # Image contrast (0-2) (float)
-#contrast=1.000000
+contrast=1.110000
 
 # Image brightness (0-2) (float)
-#brightness=1.000000
+brightness=1.040000
 
 # Image hue (-180..180) (float)
-#hue=0.000000
+hue=-20.000000
 
 # Image saturation (0-3) (float)
-#saturation=1.000000
+saturation=1.190000
 
 # Image gamma (0-10) (float)
-#gamma=1.000000
+gamma=1.320000
 
 # Brightness threshold (boolean)
 #brightness-threshold=0
@@ -994,6 +958,29 @@
 
 # Delay of the ES (ms) (integer)
 #sout-delay-delay=0
+
+[stream_out_chromecast] # Chromecast stream output
+
+# ? (string)
+#sout-chromecast-ip=
+
+# ? (integer)
+#sout-chromecast-port=8009
+
+# ? (boolean)
+#sout-chromecast-video=1
+
+# HTTP port (integer)
+#sout-chromecast-http-port=8010
+
+# Performance warning (integer)
+#sout-chromecast-show-perf-warning=1
+
+# Enable Audio passthrough (boolean)
+#sout-chromecast-audio-passthrough=0
+
+# Conversion quality (integer)
+#sout-chromecast-conversion-quality=1
 
 [bridge] # Bridge stream output
 
@@ -1382,7 +1369,7 @@
 #sout-avi-subject=
 
 # Encoder (string)
-#sout-avi-encoder=VLC Media Player - 3.0.18 Vetinari
+#sout-avi-encoder=VLC Media Player - 3.0.21 Vetinari
 
 # Keywords (string)
 #sout-avi-keywords=
@@ -1865,7 +1852,7 @@ qt-privacy-ask=0
 #sout-avformat-options=
 
 # Reset timestamps (boolean)
-#sout-avformat-reset-ts=0
+#sout-avformat-reset-ts=1
 
 [adaptive] # Unified adaptive streaming for DASH/HLS
 
@@ -1927,6 +1914,23 @@ qt-privacy-ask=0
 
 # Trigger button (string)
 #gestures-button=left
+
+[zvbi] # VBI and Teletext decoder
+
+# Teletext page (integer)
+#vbi-page=100
+
+# Opacity (boolean)
+#vbi-opaque=0
+
+# Teletext alignment (integer)
+#vbi-position=8
+
+# Teletext text subtitles (boolean)
+#vbi-text=0
+
+# Presentation Level (integer)
+#vbi-level=3
 
 [x264] # H.264/MPEG-4 Part 10/AVC encoder (x264)
 
@@ -2407,6 +2411,20 @@ qt-privacy-ask=0
 # CBR encoding (boolean)
 #sout-vorbis-cbr=0
 
+[twolame] # Libtwolame audio encoder
+
+# Encoding quality (float)
+#sout-twolame-quality=0.000000
+
+# Stereo mode (integer)
+#sout-twolame-mode=0
+
+# VBR mode (boolean)
+#sout-twolame-vbr=0
+
+# Psycho-acoustic model (integer)
+#sout-twolame-psy=3
+
 [ttml] # TTML subtitles decoder
 
 # Subtitle justification (integer)
@@ -2564,6 +2582,26 @@ qt-privacy-ask=0
 
 # Use DecodeBin (boolean)
 #use-decodebin=1
+
+[fluidsynth] # FluidSynth MIDI synthesizer
+
+# SoundFont file (string)
+#soundfont=
+
+# Chorus (boolean)
+#synth-chorus=1
+
+# Synthesis gain (float)
+#synth-gain=0.500000
+
+# Polyphony (integer)
+#synth-polyphony=256
+
+# Reverb (boolean)
+#synth-reverb=1
+
+# Sample rate (integer)
+#synth-sample-rate=44100
 
 [dvbsub] # DVB subtitles decoder
 
@@ -3077,6 +3115,38 @@ qt-privacy-ask=0
 #  SRT Stream ID (string)
 #streamid=
 
+[access_output_shout] # IceCAST output
+
+# Stream name (string)
+#sout-shout-name=VLC media player - Live stream
+
+# Stream description (string)
+#sout-shout-description=Live stream from VLC media player
+
+# Stream MP3 (boolean)
+#sout-shout-mp3=0
+
+# Genre description (string)
+#sout-shout-genre=Alternative
+
+# URL description (string)
+#sout-shout-url=http://www.videolan.org/vlc
+
+# Bitrate (string)
+#sout-shout-bitrate=
+
+# Samplerate (string)
+#sout-shout-samplerate=
+
+# Number of channels (string)
+#sout-shout-channels=
+
+# Ogg Vorbis Quality (string)
+#sout-shout-quality=
+
+# Stream public (boolean)
+#sout-shout-public=0
+
 [access_output_rist] # RIST stream output
 
 # RIST target packet size (bytes) (integer)
@@ -3150,6 +3220,143 @@ qt-privacy-ask=0
 # Frame rate (float)
 #vdr-fps=25.000000
 
+[v4l2] # Video4Linux input
+
+# Video capture device (string)
+#v4l2-dev=/dev/video0
+
+# VBI capture device (string)
+#v4l2-vbidev=
+
+# Standard (string)
+#v4l2-standard=
+
+# Video input chroma format (string)
+#v4l2-chroma=
+
+# Input (integer)
+#v4l2-input=0
+
+# Audio input (integer)
+#v4l2-audio-input=-1
+
+# Width (integer)
+#v4l2-width=0
+
+# Height (integer)
+#v4l2-height=0
+
+# Picture aspect-ratio n:m (string)
+#v4l2-aspect-ratio=4:3
+
+# Frame rate (string)
+#v4l2-fps=60
+
+# Radio device (string)
+#v4l2-radio-dev=/dev/radio0
+
+# Frequency (integer)
+#v4l2-tuner-frequency=-1
+
+# Audio mode (integer)
+#v4l2-tuner-audio-mode=3
+
+# Reset controls (boolean)
+#v4l2-controls-reset=0
+
+# Brightness (integer)
+#v4l2-brightness=-1
+
+# Automatic brightness (integer)
+#v4l2-brightness-auto=-1
+
+# Contrast (integer)
+#v4l2-contrast=-1
+
+# Saturation (integer)
+#v4l2-saturation=-1
+
+# Hue (integer)
+#v4l2-hue=-1
+
+# Automatic hue (integer)
+#v4l2-hue-auto=-1
+
+# White balance temperature (K) (integer)
+#v4l2-white-balance-temperature=-1
+
+# Automatic white balance (integer)
+#v4l2-auto-white-balance=-1
+
+# Red balance (integer)
+#v4l2-red-balance=-1
+
+# Blue balance (integer)
+#v4l2-blue-balance=-1
+
+# Gamma (integer)
+#v4l2-gamma=-1
+
+# Automatic gain (integer)
+#v4l2-autogain=-1
+
+# Gain (integer)
+#v4l2-gain=-1
+
+# Sharpness (integer)
+#v4l2-sharpness=-1
+
+# Chroma gain (integer)
+#v4l2-chroma-gain=-1
+
+# Automatic chroma gain (integer)
+#v4l2-chroma-gain-auto=-1
+
+# Power line frequency (integer)
+#v4l2-power-line-frequency=-1
+
+# Backlight compensation (integer)
+#v4l2-backlight-compensation=-1
+
+# Band-stop filter (integer)
+#v4l2-band-stop-filter=-1
+
+# Horizontal flip (boolean)
+#v4l2-hflip=0
+
+# Vertical flip (boolean)
+#v4l2-vflip=0
+
+# Rotate (degrees) (integer)
+#v4l2-rotate=-1
+
+# Color killer (integer)
+#v4l2-color-killer=-1
+
+# Color effect (integer)
+#v4l2-color-effect=-1
+
+# Audio volume (integer)
+#v4l2-audio-volume=-1
+
+# Audio balance (integer)
+#v4l2-audio-balance=-1
+
+# Mute (boolean)
+#v4l2-audio-mute=0
+
+# Bass level (integer)
+#v4l2-audio-bass=-1
+
+# Treble level (integer)
+#v4l2-audio-treble=-1
+
+# Loudness mode (boolean)
+#v4l2-audio-loudness=0
+
+# v4l2 driver controls (string)
+#v4l2-set-ctrls=
+
 [udp] # UDP input
 
 # UDP Source timeout (sec) (integer)
@@ -3159,6 +3366,17 @@ qt-privacy-ask=0
 
 # Frame rate (string)
 #timecode-fps=25/1
+
+[smb] # SMB input
+
+# Username (string)
+#smb-user=
+
+# Password (string)
+#smb-pwd=
+
+# SMB domain (string)
+#smb-domain=
 
 [shm] # Shared memory framebuffer
 
@@ -3245,10 +3463,25 @@ qt-privacy-ask=0
 # Do not check for a valid rtcp message from the encoder (boolean)
 #mcast-blind-nacks=0
 
-[nfs] # NFS input
+[linsys_sdi] # SDI Input
 
-# Set NFS uid/guid automatically (boolean)
-#nfs-auto-guid=1
+# Link # (integer)
+#linsys-sdi-link=0
+
+# Video ID (integer)
+#linsys-sdi-id-video=0
+
+# Aspect ratio (string)
+#linsys-sdi-aspect-ratio=
+
+# Audio configuration (string)
+#linsys-sdi-audio=0=1,1
+
+# Teletext configuration (string)
+#linsys-sdi-telx=
+
+# Teletext language (string)
+#linsys-sdi-telx-lang=
 
 [linsys_hdsdi] # HD-SDI Input
 
@@ -3300,6 +3533,19 @@ qt-privacy-ask=0
 
 # List special files (boolean)
 #list-special-files=0
+
+[dvdread] # DVDRead Input (no menu support)
+
+# DVD angle (integer)
+#dvdread-angle=1
+
+[dvdnav] # DVDnav Input
+
+# DVD angle (integer)
+#dvdnav-angle=1
+
+# Start directly in menu (boolean)
+#dvdnav-menu=1
 
 [dvb] # DVB input with v4l2 support
 
@@ -3723,7 +3969,7 @@ qt-privacy-ask=0
 #vout=
 
 # Video filter module (string)
-#video-filter=
+video-filter=sharpen
 
 # Video splitter module (string)
 #video-splitter=

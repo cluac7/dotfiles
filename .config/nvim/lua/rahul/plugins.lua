@@ -1,13 +1,12 @@
 return {
     {
-        "catppuccin/nvim",
-        name = "catppuccin",
+        "rebelot/kanagawa.nvim",
         priority = 1000,
         lazy = false,
-        opts = { transparent_background = true, },
+        opts = {transparent = false,},
         config = function(_, opts)
-            require("catppuccin").setup(opts)
-            vim.cmd.colorscheme "catppuccin-macchiato"
+            require("kanagawa").setup(opts)
+            vim.cmd("colorscheme kanagawa")
         end,
     },
     { "nvim-treesitter/nvim-treesitter",  build = ":TSUpdate", },

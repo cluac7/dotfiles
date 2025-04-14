@@ -30,7 +30,7 @@ cmp.setup({
     ['<C-f>'] = cmp_action.luasnip_jump_forward(),
     ['<C-b>'] = cmp_action.luasnip_jump_backward(),
     ['<C-p>'] = cmp.mapping.select_prev_item(),
-    ['<C-n>'] = cmp.mapping.select_next_item(),
+    ['<Tab>'] = cmp.mapping.select_next_item(),
 
   }),
   snippet = {
