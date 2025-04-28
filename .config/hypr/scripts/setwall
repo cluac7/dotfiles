@@ -18,7 +18,7 @@ if ! pgrep -x "swww" >/dev/null; then
     sleep 2
 fi
 
-swww img $HOME/.config/wallpapers/powderekko.png
+swww img $HOME/.config/wallpapers/mclarenchina.jpg
 
 
 ## get the names of the wallpapers in .config/wallpapers
@@ -33,5 +33,5 @@ swww img $HOME/.config/wallpapers/powderekko.png
 #  done
 #done
 
-swww img $HOME/.config/wallpapers/${wallpapers[$(($var - 1))]}
+#swww img $HOME/.config/wallpapers/${wallpapers[$(($var - 1))]}
 #swww img $HOME/.config/wallpapers/samurai_bebop.png
