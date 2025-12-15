@@ -105,3 +105,4 @@ pacman -Qi     | sed -n -e "
             w ${pipe}/names
         }
     "     | bc     | paste - "${pipe}/names"     | sort -g
+lsof +c 0 /dev/snd/pcm* /dev/dsp*

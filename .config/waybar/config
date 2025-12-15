@@ -161,7 +161,7 @@
             "default": [""]
         },
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-click-right": "pavucontrol",
+        "on-click-right": "hyprpwcenter",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%",
     },
@@ -171,7 +171,7 @@
         "format-source": " {volume}%",
         "format-source-muted": " ",
         "on-click": "pamixer --default-source -t",
-        "on-click-right": "pavucontrol",
+        "on-click-right": "hyprpwcenter",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
         "scroll-step": 5

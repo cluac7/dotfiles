@@ -55,7 +55,14 @@ return {
         lazy = false,
         dependencies = 'nvim-tree/nvim-web-devicons',
     },
-    { "github/copilot.vim" },
+    {
+        "zbirenbaum/copilot.lua",
+        cmd = "Copilot",
+        event = "InsertEnter",
+        config = function()
+            require("copilot").setup({})
+        end,
+    },
     {
         "ibhagwan/fzf-lua",
         -- optional for icon support
